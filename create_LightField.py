@@ -31,6 +31,7 @@ class LFReconstructionNet(nn.Module):
 img = cv2.imread(r"C:\Users\Owner\Documents\Lab\reserch\Data\test_input01.jpg")
 img = cv2.resize(img, dsize=(300, 400))
 
+print('hello')
 # Extract EPIs
 height, width, channels = img.shape
 epi_horizontal = np.zeros((height, width, channels), dtype=np.uint8)
